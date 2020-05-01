@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/login.css" />
@@ -18,40 +16,46 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <h1 class="text-center">BOND-Project</h1>
-                <label class="label control-label">e-mail</label>
-                <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                    <input type="text" class="form-control" name="mail" placeholder="Please type your e-mail">
-                </div>
-                <label class="label control-label">Password</label>
-                <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                    <input type="password" class="form-control" name="password" placeholder="Please type your password">
-                </div>
-                <!-- row for two col-md-6 -->
-                <div class="row">
-                    <div class="col-md-6">
-                        <input type="checkbox"><small>Remember me!</small>
+            <form onsubmit="login(event)" novalidate>
+                <div class="col-md-6">
+                    <h1 class="text-center">BOND-Project</h1>
+                    <label class="label control-label">e-mail</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                        <input required type="email" class="form-control" name="email"
+                            placeholder="Please type your e-mail">
                     </div>
-                    <div class="col-md-6">
-                        <a href="#">
-                            <p class="text-right">Forgot password</p>
-                        </a>
+                    <label class="label control-label">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        <input required type="password" class="form-control" name="password"
+                            placeholder="Please type your password">
                     </div>
+                    <!-- row for two col-md-6 -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="checkbox"><small>Remember me!</small>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#">
+                                <p class="text-right">Forgot password</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="index.html">
+                        <button class="btb btn-default" type="submit">
+                            <p class="text-login">LOGIN</p>
+                        </button>
+                    </a>
+                    <p class="text-center">Don't have an account?</p>
+                    <p class="text-center"><a href="register-page.html">Register</a></p>
+                   
                 </div>
-                <a href="index.html">
-                    <div class="btb btn-default">
-                        <p class="text-login">LOGIN</p>
-                    </div>
-                </a>
-                <p class="text-center">Don't have an account?</p><br>
-                <p class="text-center-developer"><a href="register-developer.html">Register as developer</a></p>
-                <p class="text-center-company"><a href="register-company.html">Register as company</a></p>
-            </div>
-            <div class="col-md-3"></div>
-           
+            </form>
+        </div>
+
+        <div class="col-md-3"></div>
+
 
 
 
@@ -59,7 +63,8 @@
 
 
 
-
+    <script src="js/login.js"></script>
+    <script src="js/formValidation.js"></script>
 </body>
 
 </html>

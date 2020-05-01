@@ -4,12 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/login.css" />
-    <link rel="stylesheet" href="">
 
     <title>Register page</title>
 </head>
@@ -18,32 +15,41 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <h1 class="text-center">BOND-Project</h1>
-                <label class="label control-label">e-mail</label>
-                <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                    <input type="text" class="form-control" name="mail" placeholder="Please type your e-mail">
-                </div>
-                <label class="label control-label">Password</label>
-                <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                    <input type="password" class="form-control" name="password" placeholder="Please type your password">
-                </div>
-                <br>
-                <a href="login-page.html">
-                    <div class="btb btn-default">
-                        <p class="text-login">REGISTER</p>  
+            <form onsubmit="registerUser(event)" novalidate>
+                <div class="col-md-6">
+                    <h1 class="text-center">BOND-Project</h1>
+                    <label class="label control-label">e-mail</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                        <input type="email" class="form-control" name="email" placeholder="Please type your e-mail">
                     </div>
-                    <br>  <br>  <br>
-               
-            </div>
+                    <label class="label control-label">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        <input type="password" class="form-control" name="password"
+                            placeholder="Please type your password">
+                    </div>
+                    <br>
+                    <button class="btb btn-default" type="submit">
+                        <p class="text-login">REGISTER</p>
+                    </button>
+                    <p class="error text-center"></p>
+                    <hr />
+
+                    <p class="text-center">
+                        Already have an account?<a href="login-page.html"> Login</a>
+                    </p>
+                    <br><br>
+                </div>
+            </form>
             <div class="col-md-3"></div>
+        </div>
     </div>
 
 
 
-
+    <script src="js/registration.js"></script>
+    <script src="js/formValidation.js"></script>
 </body>
 
 </html>

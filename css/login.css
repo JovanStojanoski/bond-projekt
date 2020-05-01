@@ -46,6 +46,7 @@ h1{
 input[type="checkbox"]{
     height: 15px;
     width: 15px;
+    background-color: transparent;
 }
 small{
     font-size: 20px;
@@ -55,27 +56,19 @@ p{
     font-size: 20px;
     color: white;
     
+   
     
 }
 .btn-default{
-    border: 1px solid grey;
+    border: 1px solid white;
     background-color: transparent;
     border-radius: 5px;
     width: 100%;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 30px;
+    color: white;
 }
-.text-login{
-    padding-top: 10px;
-    text-align: center;
-    font-size: 30px;
-}
-.text-center-developer{
-    float: left;
-}
-.text-center-company{
-    float: right;
-    padding-top: -20px;
-}
+
+
 
