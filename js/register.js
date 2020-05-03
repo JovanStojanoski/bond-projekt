@@ -36,7 +36,7 @@ function registerUser(e) {
                 return;
             }
 
-            location.assign("../login-page.html");
+            location.assign("login-page.html");
         })
         .catch(function (error) {
             if (error == "TypeError: Failed to fetch") {
