@@ -16,13 +16,14 @@ body{
     color: red;
     
 }
-.col-md-6{
+/* .col-md-6{
     margin-top: 20px;
     
    /* border-left: grey solid 3px;
-    border-right: grey solid 3px;*/
+    border-right: grey solid 3px;
+}*/
 
-}
+
 
 
 
@@ -34,20 +35,23 @@ height: 150px;
 border-radius: 15px;
 }
 /* Links marketing part left side */
+
 .col-md-12-commercial1{  
     margin-top: 20px; 
     border-radius: 15px; 
     height: 200px;
     box-sizing: border-box;
-    background-image: url(../images/it\ logo1.jpeg);
+    background-image: url(../images/w3.jfif);
+    background-position: center;
     background-size: cover;
  }
  .col-md-12-commercial2{    
     margin-top: 20px; 
     border-radius: 15px; 
-    height: 250px;
+    height: 200px;
     box-sizing: border-box;
-    background-image: url(../images/SEDC2.jfif);
+    background-image: url(../images/html.jfif);
+    background-position: center;
     background-size: cover;  
 }
 .col-md-12-commercial3{
@@ -55,7 +59,8 @@ border-radius: 15px;
     border-radius: 15px;
     height: 200px;   
     box-sizing: border-box;
-    background-image: url(../images/google.png);
+    background-image: url(../images/css.jfif);
+    background-position: center;
     background-size: cover;          
 }
 .col-md-12-commercial4{  
@@ -63,11 +68,9 @@ border-radius: 15px;
     border-radius: 15px;
     height: 200px;    
     box-sizing: border-box;
-    background-image: url();
-    background-size: cover;
-    color: grey;
-    font-weight: bold;
-    text-align: center;
+    background-image: url(../images/bootsrap.png);
+    background-position: center;
+    background-size: cover;     
                
 }
 .col-md-12-commercial5{  
@@ -76,7 +79,129 @@ border-radius: 15px;
     height: 200px;
     border-radius: 15px;
     box-sizing: border-box;
+    background-image: url(../images/google.png);
+    background-position: center;
+    background-size: cover;
+}
+/*links middle part */
+
+.col-md-6-commercial-midone{
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 15px;
+    height: 200px;
+    width: 250px;
+    box-sizing: border-box;
+    background-image: url(../images/javascrypt.png);
+    background-position: center;
+    background-size: cover;
+}
+.col-md-6-commercial-midtwo{
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 15px;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-image: url(../images/jquery.png);
+    background-position: center;
+    background-size: cover;
+}
+    
+}
+.col-md-6-commercial-midthree{
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 15px;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+}
+.col-md-6-commercial-midfour{
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 15px;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+}
+.col-md-6-commercial-midfive{
+    margin-top: -10px;
+    margin-left: 25px;
+    border-radius: 15px;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-image: url(../images/stackoverflow-1.png);
+    background-position: center;
+    background-size: cover;
+}
+.col-md-6-commercial-midsix{
+    margin-top: -10px;
+    margin-left: 25px;
+    border-radius: 15px;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    box-sizing: border-box;
     background-image: url(../images/regex.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.col-md-6-commercial-midseven{
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 15px;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-image: url(../images/c-programming.png);
+    background-position: center;
+    background-size: cover;
+}
+.col-md-6-commercial-mideight{
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 15px;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-image: url(../images/PHP-Programming-Language.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.col-md-6-commercial-midnine{
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 15px;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-image: url(../images/ytube.png);
+    background-position: center;
+    background-size: cover;
+}
+.col-md-6-commercial-midten{
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 15px;
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-image: url(../images/SEDC2.jfif);
+    background-position: center;
     background-size: cover;
 }
 /* Links learning proggres for help  and improving*/
@@ -123,10 +248,39 @@ border-radius: 15px;
     text-align: center;
   
 }
+.btn-default-centerpage{
+    border: 1px solid rgba(20, 179, 179, 0.6); ;
+    background-color: rgba(14, 19, 19, 0.6);
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    text-align: center;
+}
+.btn-default-centerpage1{
+    border: 1px solid rgba(20, 179, 179, 0.6); ;
+    background-color: rgba(14, 19, 19, 0.6);
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    text-align: center;
+}
 .text-center{
     padding-top: 10px;
     text-align: center;
     color: white;
     font-size: 40px;
+}
+.text-center-centerpage{
+    
+    text-align: center;
+    color: white;
+    font-size: 25px;
 }
 
