@@ -16,25 +16,18 @@ body{
     color: red;
     
 }
-/* .col-md-6{
-    margin-top: 20px;
-    
-   /* border-left: grey solid 3px;
-    border-right: grey solid 3px;
-}*/
-
-
-
-
-
+.col-md-6{
+/* margin: auto; */
+}
 .col-md-12{
 margin-top: 20px;
-background-color: yellow;
+border: 1px solid rgba(20, 179, 179, 0.6); ;
+background-color: rgba(14, 19, 19, 0.6);
 width: 100%;
-height: 150px;
+height: 200px;
 border-radius: 15px;
 }
-/* Links marketing part left side */
+/* Links  left side */
 
 .col-md-12-commercial1{  
     margin-top: 20px; 
@@ -109,7 +102,7 @@ border-radius: 15px;
     background-size: cover;
 }
     
-}
+
 .col-md-6-commercial-midthree{
     margin-top: 20px;
     margin-left: 25px;
@@ -204,7 +197,7 @@ border-radius: 15px;
     background-position: center;
     background-size: cover;
 }
-/* Links learning proggres for help  and improving*/
+/* video Links learning proggres for help and improving*/
 
 .col-md-12-right-1{
     margin-top: 20px;
@@ -236,6 +229,8 @@ border-radius: 15px;
     height: 80px;
     
 }
+
+/* css for buutons text and more ...*/
 
 .btn-default{
     border: 1px solid rgba(20, 179, 179, 0.6); ;
