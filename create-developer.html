@@ -18,7 +18,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-1"></div>
-            <form onsubmit="createDeveloper(event)">
+            <form onsubmit="createDeveloper(event)" novalidate>
                 <div class="col-md-10">
                     <h3 class="text-center">Junior web developer</h3>
                     <label class="label control-label">Full Name</label>
@@ -28,7 +28,8 @@
                     </div>
                     <label class="label control-label">Personal image</label>
                     <div class="input-group">
-                        <input type="file" class="form-control-image" name="image" placeholder="">
+                        <input type="file" id="selected-image" class="form-control-image" name="image" placeholder=""
+                            onchange="getImageUrl(30, 0.3, showSelectedImage)">
                     </div>
                     <label class="label control-label">e-mail</label>
                     <div class="input-group">
@@ -82,52 +83,56 @@
                     <br><br>
                     <div class="row" name="skills">
                         <div class="col-md-2" name="skills">
-                            <input type="checkbox" name="skills"><small>HTML</small>
+                            <input type="checkbox" name="html"><small>HTML</small>
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills"><small>CSS</small>
+                            <input type="checkbox" name="css"><small>CSS</small>
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills"><small>JS Basic</small>
+                            <input type="checkbox" name="js-basic"><small>JS Basic</small>
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills"><small>JS Advanced</small>
+                            <input type="checkbox" name="js-adv"><small>JS Advanced</small>
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills"><small>C# Basic</small>
+                            <input type="checkbox" name="c-sharp-basic"><small>C# Basic</small>
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills"><small>C# Advanced</small>
+                            <input type="checkbox" name="c-sharp-adv"><small>C# Advanced</small>
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills"><small>Language</small>
+                            <input type="checkbox" name="skills1"><small>Language1</small>
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills"><small>Language</small>
+                            <input type="checkbox" name="skills2"><small>Language2</small>
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills"><small>Language</small>
+                            <input type="checkbox" name="skills3"><small>Language3</small>
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills"><small>Language</small>
+                            <input type="checkbox" name="skills4"><small>Language4</small>
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills"><small>Language</small>
+                            <input type="checkbox" name="skills5"><small>Language5</small>
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills"><small>Language</small>
+                            <input type="checkbox" name="skills6"><small>Language6</small>
                         </div>
                     </div>
                     <br>
                     <label class="label control-label">Describe your personality</label>
-                    <div class="input-group" name="desc">
-                        <textarea name="textarea" cols="75" rows="3"></textarea>
+                    <div class="input-group">
+                        <textarea name="txt" cols="75" rows="3"></textarea>
                     </div>
                     <div class="input-group">
                         <button class="btb btn-default" type="submit">
                             <p class="text-login">CREATE PROFILE</p>
                         </button>
+                        <p class="error text-center"></p>
                     </div>
+                    <p class="text-center-back-link">
+                        <a href="index.html">BACK TO MAIN PAGE</a>
+                    </p>
 
                 </div>
             </form>
@@ -136,8 +141,10 @@
 
     </div>
 
-
+    <script src="js/get-image-url.js"></script>
+    <script src="js/userAutentication.js"></script>
     <script src="js/createprofileDeveloper.js"></script>
+    <script src="js/formValidationCreateProfile.js "></script>
 </body>
 
 </html>

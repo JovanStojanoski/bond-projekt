@@ -20,7 +20,7 @@
             <div class="col-md-1">
 
             </div>
-            <form onsubmit="createCompany(event)">
+            <form onsubmit="createCompany(event)" novalidate>
                 <div class="col-md-10">
                     <h3 class="text-center">Company & Employer</h3>
                     <div class="row">
@@ -109,7 +109,11 @@
                         <button class="btb btn-default" type="submit">
                             <p class="text-login">CREATE PROFILE</p>
                         </button>
+                        <p class="error text-center"></p>
                     </div>
+                    <p class="text-center-back-link">
+                        <a href="index.html">BACK TO MAIN PAGE</a>
+                    </p>
                 </div>
             </form>
         </div>
@@ -119,8 +123,8 @@
 
 
 
-
-
+    <script src="js/formValidationCreateCompany.js"></script>
+    <script src="js/userAutentication.js"></script>
     <script src="js/creataProfileCompany.js"></script>
 </body>
 

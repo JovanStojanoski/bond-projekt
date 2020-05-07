@@ -69,3 +69,8 @@ small{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+.text-center-back-link{
+    font-size: 30px;
+    text-align: center;
+}
+

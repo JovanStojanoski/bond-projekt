@@ -16,9 +16,10 @@ body{
     color: red;
     
 }
-.col-md-6{
-/* margin: auto; */
-}
+/* 
+ .col-md-6{
+ margin: auto; 
+}  */
 .col-md-12{
 margin-top: 20px;
 border: 1px solid rgba(20, 179, 179, 0.6); ;

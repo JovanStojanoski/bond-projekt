@@ -1,10 +1,20 @@
 
+// function showSelectedImage(imageUrl, error) {
+//   if (error !== null) {
+//     alert(error);
+//   }
+
+//   document.getElementById("selected-image").src = imageUrl;
+// }
+
+
+
 
 function createDeveloper(e) {
   e.preventDefault();
   var form = e.target;
   var fullName = form.fullName.value;
-  var personalImage = form.image.value;
+  var personalImage = document.getElementById("selected-image").src;
   var email = form.email.value;
   var password = form.password.value;
   var fbLink = form.fb.value;
@@ -13,8 +23,16 @@ function createDeveloper(e) {
   var city = form.city.value;
   var postal = form.postal.value;
   var mobile = form.mobile.value;
-  var skills = form.skills.value;
- 
+  var txt = form.txt.value;
+  var errorParagraph = document.querySelector("p.error");
+  var isValid = isFormValid(fullName, email, password, fbLink, ghLink, city, errorParagraph);
+
+  if (!isValid) {
+    return;
+  }
+  // var skills = form.skills.value;
+
+
 
   var newDeveloper = {
     fullName: fullName,
@@ -27,7 +45,9 @@ function createDeveloper(e) {
     city: city,
     postal: postal,
     mobile: mobile,
-    skills: skills,
+    txt: txt,
+    // skills: skills,
+
     returnSecureToken: true
 
   };
@@ -42,8 +62,14 @@ function createDeveloper(e) {
     })
     .then(function (data) {
       console.log(data);
+      if (data.error !== undefined) {
+        var errorMessage = data.error.message.replace(/_/g, " ").toLowerCase();
+        errorParagraph.innerText = errorMessage;
+        return;
+      }
     })
     .catch(function (error) {
       console.log(error)
     });
 }
+

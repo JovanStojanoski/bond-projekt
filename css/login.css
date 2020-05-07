@@ -15,8 +15,16 @@ h1{
 }
 .col-md-6{
     background-color: rgba(14, 19, 19, 0.6);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.col-md-3{
+        
+    background-color: rgba(14, 19, 19, 0.6);
     margin-top: 40px;
     border-radius: 5px;
+    color: white;
 }
 .label{
     font-size: 20px;

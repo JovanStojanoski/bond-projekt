@@ -1,6 +1,6 @@
 
 
-var Developers;
+var developer;
 getDevelopers();
 
 function getDevelopers() {
@@ -9,28 +9,18 @@ function getDevelopers() {
             return res.json();
         })
         .then(function (data) {
-            Developer = Object.keys(data).map(function (key) {
-
+            developer = Object.keys(data).map(function (key) {
                 var newDeveloper = {
                     id: key,
                     fullName: data[key].fullName,
                     personalImage: data[key].personalImage,
-                    email: data[key].email,
-                    fbLink: data[key].fbLink,
-                    ghLink: data[key].ghLink,
-                    address: data[key].address,
-                    city: data[key].city,
-                    postal: data[key].postal,
-                    email: data[key].email,
-                    mobile: data[key].mobile,
-                    skills: data[key].skills,
+                    address: data[key].address
 
                 };
-
                 return newDeveloper;
             });
 
-            drawDevelopersInHTML(Developer);
+            drawDevelopersInHTML(developer);
         })
         .catch(function (error) {
             console.log(error);
@@ -38,14 +28,21 @@ function getDevelopers() {
 }
 
 function drawDevelopersInHTML(arrayofDevelopers) {
-    arrayofDevelopers.forEach(function (developer) {
-        var card = createDeveloperCard(
-            developer.personalImage,
-            developer.fullName,
-            developer.address,
-            "../create-developer.html?id=" + developer.id
-        );
+    const allDevelopers = document.getElementById("developer");
+    allDevelopers.innerHTML = "";
 
-        document.getElementById("developers").append(card);
+    arrayofDevelopers.forEach(function (developer) {
+
+        allDevelopers.innerHTML += `
+        <div class="card" style="width: 18rem;">
+        <img src="${developer.personalImage}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">${developer.fullName}</h5>
+          <p class="card-text">${developer.address}</p>
+          <a href="developers.html?id=${developer.id}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    `;
+
     });
 }

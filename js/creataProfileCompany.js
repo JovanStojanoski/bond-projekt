@@ -15,6 +15,12 @@ function createCompany(e) {
     var postal = form.postal.value;
     var practice = form.practice.value;
     var job = form.job.value;
+    var errorParagraph = document.querySelector("p.error");
+    var isValid = isFormValid(company, email, password, facebook, website, city, errorParagraph);
+  
+    if (!isValid) {
+      return;
+    }
 
 
     var newCompany = {
