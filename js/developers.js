@@ -36,7 +36,7 @@ function drawDevelopersInHTML(arrayofDevelopers) {
 
         allDevelopers.innerHTML += `
         <div class="card" style="width: 18rem;">
-        <img src="${developer.personalImage}" class="card-img-top">
+         <img src="${developer.personalImage}" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">${developer.fullName}</h5>
           <p class="card-text">${developer.address}</p>
