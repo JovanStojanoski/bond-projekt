@@ -26,7 +26,9 @@
                     <div class="row">
                         <label class="label control-label">Please put logo here...</label>
                         <div class="input-group">
-                            <input type="file" class="form-control-image" name="logo" placeholder="">
+                            <input type="file" class="form-control-image" name="logo" placeholder=""
+                            onchange="getImageUrl(30, 0.3, showSelectedImage)">
+                            <img id="selected-image">
                         </div>
                         <div class="col-md-6">
                             <label class="label control-label">Company</label>
@@ -122,10 +124,12 @@
 
 
 
-
+    <script src="js/get-image-url.js"></script>
     <script src="js/formValidationCreateCompany.js"></script>
     <script src="js/userAutentication.js"></script>
     <script src="js/creataProfileCompany.js"></script>
+
+
 </body>
 
 </html>

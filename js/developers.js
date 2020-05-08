@@ -14,7 +14,8 @@ function getDevelopers() {
                     id: key,
                     fullName: data[key].fullName,
                     personalImage: data[key].personalImage,
-                    address: data[key].address
+                    address: data[key].address,
+                    skills: data[key].skills
 
                 };
                 return newDeveloper;
@@ -39,6 +40,7 @@ function drawDevelopersInHTML(arrayofDevelopers) {
         <div class="card-body">
           <h5 class="card-title">${developer.fullName}</h5>
           <p class="card-text">${developer.address}</p>
+          <p class="card-text">${developer.skills}</p>
           <a href="developers.html?id=${developer.id}" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>

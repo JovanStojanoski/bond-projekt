@@ -28,12 +28,14 @@
                     </div>
                     <label class="label control-label">Personal image</label>
                     <div class="input-group">
-                        <input type="file" id="selected-image" class="form-control-image" name="image" placeholder=""
+                        <input type="file" class="form-control-image" name="image" placeholder=""
                             onchange="getImageUrl(30, 0.3, showSelectedImage)">
+                        <img id="selected-image">
                     </div>
                     <label class="label control-label">e-mail</label>
                     <div class="input-group">
                         <input type="email" class="form-control" name="email" placeholder="Please type your e-mail">
+                        <img id="selected-image">
                     </div>
                     <label class="label control-label">Password</label>
                     <div class="input-group">
@@ -83,40 +85,54 @@
                     <br><br>
                     <div class="row" name="skills">
                         <div class="col-md-2" name="skills">
-                            <input type="checkbox" name="html"><small>HTML</small>
+                            <label for="html-input">Html</label>
+                            <input data-courses type="checkbox" name="html" value="html">
+                            <!-- <small>HTML</small> -->
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="css"><small>CSS</small>
+                            <label for="css-input">Css</label>
+                            <input data-courses type="checkbox" name="css" value="css">
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="js-basic"><small>JS Basic</small>
+                            <label for="jsbasic-input">Js Basic</label>
+                            <input data-courses type="checkbox" name="jsbasic" value="jsbasic">
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="js-adv"><small>JS Advanced</small>
+                            <label for="jsadv-input">Js Advanced</label>
+                            <input data-courses type="checkbox" name="jsadv" value="jsadv">
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="c-sharp-basic"><small>C# Basic</small>
+                            <label for="csbasic-input">C# basic</label>
+                            <input data-courses type="checkbox" name="csbasic" value="csbasic">
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="c-sharp-adv"><small>C# Advanced</small>
+                            <label for="csadv-input">C# Advanced</label>
+                            <input data-courses type="checkbox" name="csadv" value="csadv">
+                        </div>
+                        <hr>
+                        <div class="col-md-2">
+                            <label for="skills1-input">Skill</label>
+                            <input data-courses type="checkbox" name="skills1" value="skills1">
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills1"><small>Language1</small>
+                            <label for="skills2-input">Skill</label>
+                            <input data-courses type="checkbox" name="skills2" value="skills2">
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills2"><small>Language2</small>
+                            <label for="skills3-input">Skill</label>
+                            <input data-courses type="checkbox" name="skills3" value="skills3">
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills3"><small>Language3</small>
+                            <label for="skills4-input">Skill</label>
+                            <input data-courses type="checkbox" name="skills4" value="skills4">
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills4"><small>Language4</small>
+                            <label for="skills5-input">Skill</label>
+                            <input data-courses type="checkbox" name="skills5" value="skills5">
                         </div>
                         <div class="col-md-2">
-                            <input type="checkbox" name="skills5"><small>Language5</small>
-                        </div>
-                        <div class="col-md-2">
-                            <input type="checkbox" name="skills6"><small>Language6</small>
+                            <label for="skills6-input">Skill</label>
+                            <input data-courses type="checkbox" name="skills6" value="skills6">
                         </div>
                     </div>
                     <br>
@@ -134,7 +150,7 @@
                         <a href="index.html">BACK TO MAIN PAGE</a>
                     </p>
 
-                </div>
+
             </form>
             <div class="col-md-1"></div>
         </div>

@@ -67,6 +67,13 @@ small{
     font-size: 30px;
     text-align: center;
 }
+.error{
+    font-size: 20px;
+    color: white;
+    }
+label{
+    color: white;
+}
 
     
     

@@ -72,5 +72,9 @@ small{
 .text-center-back-link{
     font-size: 30px;
     text-align: center;
+}   
+.error{
+font-size: 20px;
+color: white;
 }
 

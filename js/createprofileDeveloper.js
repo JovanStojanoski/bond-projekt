@@ -1,14 +1,11 @@
 
-// function showSelectedImage(imageUrl, error) {
-//   if (error !== null) {
-//     alert(error);
-//   }
+function showSelectedImage(imageUrl, error) {
+  if (error !== null) {
+    alert(error);
+  }
 
-//   document.getElementById("selected-image").src = imageUrl;
-// }
-
-
-
+  document.getElementById("selected-image").src = imageUrl;
+}
 
 function createDeveloper(e) {
   e.preventDefault();
@@ -24,15 +21,77 @@ function createDeveloper(e) {
   var postal = form.postal.value;
   var mobile = form.mobile.value;
   var txt = form.txt.value;
+  // var skills = [];
+
+  // var htmlCheckbox = form["html"];
+  // if (htmlCheckbox.checked == true) {
+  //   skills.push(htmlCheckbox.value);
+  // }
+
+  // var cssCheckbox = form.css;
+  // if (cssCheckbox.checked) {
+  //   skills.push(cssCheckbox.value)
+  // }
+
+  // var jsbasicCheckbox = form.jsbasic;
+  // if (jsbasicCheckbox.checked) {
+  //   skills.push(jsbasicCheckbox.value)
+  // }
+  // var jsadvCheckbox = form.jsadv;
+  // if (jsadvCheckbox.checked) {
+  //   skills.push(jsadvCheckbox.value)
+  // }
+  // var csbasicCheckbox = form.csbasic;
+  // if (csbasicCheckbox.checked) {
+  //   skills.push(csbasicCheckbox.value)
+  // }
+  // var csadvCheckbox = form.csadv;
+  // if (csadvCheckbox.checked) {
+  //   skills.push(csadvCheckbox.value)
+  // }
+  // var skills1Checkbox = form.skills1;
+  // if (skills1Checkbox.checked) {
+  //   skills.push(skills1Checkbox.value)
+  // }
+
+  // var skills2Checkbox = form.skills2;
+  // if (skills2Checkbox.checked) {
+  //   skills.push(skills2Checkbox.value)
+  // }
+
+  // var skills2Checkbox = form.skills2;
+  // if (skills2Checkbox.checked) {
+  //   skills.push(skills2Checkbox.value)
+  // }
+
+  // var skills4Checkbox = form.skills4;
+  // if (skills4Checkbox.checked) {
+  //   skills.push(skills4Checkbox.value)
+  // }
+
+  // var skills5Checkbox = form.skills5;
+  // if (skills5Checkbox.checked) {
+  //   skills.push(skills5Checkbox.value)
+  // }
+
+  // var skills6Checkbox = form.skills6;
+  // if (skills6Checkbox.checked) {
+  //   skills.push(skills6Checkbox.value)
+  // }
+
+  var skills = [];
+  var skillsCheckboxes = document.querySelectorAll("input[data-courses]:checked");
+
+  for (var i = 0; i < skillsCheckboxes.length; i++) {
+    skills.push(skillsCheckboxes[i].value);
+  }
+
   var errorParagraph = document.querySelector("p.error");
   var isValid = isFormValid(fullName, email, password, fbLink, ghLink, city, errorParagraph);
 
   if (!isValid) {
     return;
   }
-  // var skills = form.skills.value;
-
-
 
   var newDeveloper = {
     fullName: fullName,
@@ -46,7 +105,7 @@ function createDeveloper(e) {
     postal: postal,
     mobile: mobile,
     txt: txt,
-    // skills: skills,
+    skills: skills,
 
     returnSecureToken: true
 

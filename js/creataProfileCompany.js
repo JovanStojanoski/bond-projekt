@@ -1,9 +1,16 @@
 
+function showSelectedImage(imageUrl, error) {
+    if (error !== null) {
+      alert(error);
+    }
+  
+    document.getElementById("selected-image").src = imageUrl;
+  }
 
 function createCompany(e) {
     e.preventDefault();
     var form = e.target;
-    var logo = form.logo.value;
+    var logo = document.getElementById("selected-image").src;
     var company = form.company.value;
     var email = form.email.value;
     var password = form.password.value;
